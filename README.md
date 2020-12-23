@@ -3,13 +3,28 @@
 ### Code: As the work is done during internship in the company, the code needs to be verfied to contain no confidential information of company, so the code is being checked now, we will release the code once the checking process is done!
 
 
+
+# Official implementation of FCL-taco2
+
+## Environment
+*  python 3.6.10
+*  torch 1.3.1
+*  chainer 6.0.0
+*  espnet 8.0.0
+*  apex 0.1
+*  numpy 1.19.1
+*  kaldiio 2.15.1
+*  librosa 0.8.0
+
+## Training and inference:
+
 *  Step1. Data preparation & preprocessing
 
 1.  Download LJSpeech from https://keithito.com/LJ-Speech-Dataset/
 
-2.  Unpack downloaded LJSpeech-1.1.tar.bz2 to some place in your machine, e.g., /xx/LJSpeech-1.1
+2.  Unpack downloaded LJSpeech-1.1.tar.bz2 to /xx/LJSpeech-1.1
 
-3.  Obtain the forced alignment information by using Montreal forced aligner tool https://montreal-forced-aligner.readthedocs.io/en/latest/, you can also download our alignment result at xxx, then unpack it to some palce in your machine, e.g., /xx/TextGrid
+3.  Obtain the forced alignment information by using Montreal forced aligner tool https://montreal-forced-aligner.readthedocs.io/en/latest/. Or you can download our alignment results at https://drive.google.com/file/d/1nMjPlPDtspPxgG5AK-AdBq1ce330YMGP, then unpack it to /xx/TextGrid
 
 4.  Preprocess the dataset to extract mel-spectrograms, phoneme duration, pitch, energy and phoneme sequence by:
 
@@ -19,17 +34,27 @@
 
 *  Step2. Model training
 
-1.  Training teacher model FCL-taco2-T: ./teacher_model_training.sh
+1.  Training teacher model FCL-taco2-T: 
 
-2.  Training student model FCL-taco2-S: ./student_model_training.sh
+         ./teacher_model_training.sh
+
+2.  Training student model FCL-taco2-S: 
+
+         ./student_model_training.sh
+
+3.  Parallel-WaveGAN vocoder training: follow instructions at https://github.com/kan-bayashi/ParallelWaveGAN. You can also download the pre-trained PWG vocoder, and put the PWG model under the directory "vocoder".
 
 
 *  Step3. Model evaluation
 
-1.  Train a new vocoder or download Parallel-WaveGAN vocoder from https://drive.google.com/open?id=1a5Q2KiJfUQkVFo5Bd1IoYPVicJGnm7EL, then put it under 'vocoder'
+1.  FCL-taco2-T evaluation: 
 
-2.  FCL-taco2-T evaluation: ./inference_teacher.sh
+         ./inference_teacher.sh
 
-3.  FCL-taco2-S evaluation: ./inference_student.sh
+2.  FCL-taco2-S evaluation: 
+
+         ./inference_student.sh
+
+
 
 
