@@ -10,7 +10,7 @@
 *  python 3.6.10
 *  torch 1.3.1
 *  chainer 6.0.0
-*  espnet 8.0.0
+*  espnet 0.8.0
 *  apex 0.1
 *  numpy 1.19.1
 *  kaldiio 2.15.1
