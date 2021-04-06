@@ -1,3 +1,4 @@
+# Official implementation for 'FCL-TACO2: Towards Fast, Controllable and Lightweight Text-to-Speech synthesis' (accepted by ICASSP 2021)
 # Training and inference scripts for FCL-taco2
 
 ## Environment
