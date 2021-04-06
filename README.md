@@ -1,16 +1,10 @@
-### Audio samples: https://wendison.github.io/FCL-taco2-demo/
-
-### Code: As the work is done during internship in the company, the code needs to be verfied to contain no confidential information of company, so the code is being checked now, we will release the code once the checking process is done!
-
-
-
-# Official implementation of FCL-taco2
+# Training and inference scripts for FCL-taco2
 
 ## Environment
 *  python 3.6.10
 *  torch 1.3.1
 *  chainer 6.0.0
-*  espnet 0.8.0
+*  espnet 8.0.0
 *  apex 0.1
 *  numpy 1.19.1
 *  kaldiio 2.15.1
@@ -54,7 +48,5 @@
 2.  FCL-taco2-S evaluation: 
 
          ./inference_student.sh
-
-
 
 
