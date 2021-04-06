@@ -1,0 +1,44 @@
+# FCL-taco2-S training settting during knowledge distillation
+
+model-module: nets.knowledge_distillation.e2e_tts_tacotron2_sa_kd_student:Tacotron2_sa
+# encoder related
+embed-dim: 256
+elayers: 1
+eunits: 256
+econv-layers: 3 # if set 0, no conv layer is used
+econv-chans: 256
+econv-filts: 5
+
+# decoder related
+dlayers: 2
+dunits: 256
+prenet-layers: 2  # if set 0, no prenet is used
+prenet-units: 256
+postnet-layers: 5 # if set 0, no postnet is used
+postnet-chans: 128
+postnet-filts: 5
+
+
+use-batch-norm: true # whether to use batch normalization in conv layer
+use-concate: true    # whether to concatenate encoder embedding with decoder lstm outputs
+use-residual: false  # whether to use residual connection in encoder convolution
+use-masking: true    # whether to mask the padded part in loss calculation
+reduction-factor: 1
+
+# minibatch related
+batch-size: 16
+batch-sort-key: shuffle # shuffle or input or output
+maxlen-in: 150     # if input length  > maxlen-in, batchsize is reduced (if use "shuffle", not effect)
+maxlen-out: 400    # if output length > maxlen-out, batchsize is reduced (if use "shuffle", not effect)
+
+# optimization related
+lr: 1e-3
+eps: 1e-6
+weight-decay: 0.0
+dropout-rate: 0.5
+zoneout-rate: 0.1
+epochs: 100
+patience: 0
+
+
+use-second-target: true # use precalculated durations
