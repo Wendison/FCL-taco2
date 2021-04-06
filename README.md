@@ -1,5 +1,5 @@
-## Official implementation for 'FCL-TACO2: Towards Fast, Controllable and Lightweight Text-to-Speech synthesis' (accepted by ICASSP 2021)
-## Audio samples(https://wendison.github.io/FCL-taco2-demo/)
+## Official implementation for **['FCL-TACO2: Towards Fast, Controllable and Lightweight Text-to-Speech synthesis'](http://www1.se.cuhk.edu.hk/~hccl/publications/pub/ICASSP2021-FCL-taco2-final-version.pdf)** (accepted by ICASSP 2021)
+## Audio samples: https://wendison.github.io/FCL-taco2-demo/
 # Training and inference scripts for FCL-taco2
 
 ## Environment
