@@ -1,7 +1,7 @@
 ## Official implementation of **['FCL-TACO2: Towards Fast, Controllable and Lightweight Text-to-Speech synthesis'](http://www1.se.cuhk.edu.hk/~hccl/publications/pub/ICASSP2021-FCL-taco2-final-version.pdf)** (accepted by ICASSP 2021)
 <!---**['FCL-TACO2: Towards Fast, Controllable and Lightweight Text-to-Speech synthesis'](http://www1.se.cuhk.edu.hk/~hccl/publications/pub/ICASSP2021-FCL-taco2-final-version.pdf)**--->
 ## Audio samples: https://wendison.github.io/FCL-taco2-demo/
-## Huawei Noah's Ark Lab is recruiting interns on speech processing fields, if you're interested, you're welcome to contact Dr. Deng:  dengliqun.deng@huawei.com
+## :speech_balloon: Huawei Noah's Ark Lab is recruiting interns on speech processing fields, if you're interested, you're welcome to contact Dr. Deng:  dengliqun.deng@huawei.com
 
 # Training and inference scripts for FCL-taco2
 ## Environment
@@ -54,3 +54,15 @@
          ./inference_student.sh
 
 
+# Citation
+If you find this repository helpful for you, you're welcome to cite our paper:
+```
+@inproceedings{wang2021fcl,
+  title={Fcl-Taco2: Towards Fast, Controllable and Lightweight Text-to-Speech Synthesis},
+  author={Wang, Disong and Deng, Liqun and Zhang, Yang and Zheng, Nianzu and Yeung, Yu Ting and Chen, Xiao and Liu, Xunying and Meng, Helen},
+  booktitle={ICASSP 2021-2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={5714--5718},
+  year={2021},
+  organization={IEEE}
+}
+```
