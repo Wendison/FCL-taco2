@@ -1,10 +1,9 @@
 ## Official implementation of **['FCL-TACO2: Towards Fast, Controllable and Lightweight Text-to-Speech synthesis'](http://www1.se.cuhk.edu.hk/~hccl/publications/pub/ICASSP2021-FCL-taco2-final-version.pdf)** (accepted by ICASSP 2021)
 <!---**['FCL-TACO2: Towards Fast, Controllable and Lightweight Text-to-Speech synthesis'](http://www1.se.cuhk.edu.hk/~hccl/publications/pub/ICASSP2021-FCL-taco2-final-version.pdf)**--->
 ## Audio samples: https://wendison.github.io/FCL-taco2-demo/
-# Training and inference scripts for FCL-taco2
-
 ## Huawei Noah's Ark Lab is recruiting interns on speech processing fields, if you're interested, you're welcome to contact Dr. Deng:  dengliqun.deng@huawei.com
 
+# Training and inference scripts for FCL-taco2
 ## Environment
 *  python 3.6.10
 *  torch 1.3.1
