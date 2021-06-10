@@ -55,7 +55,7 @@
 
 
 # Citation
-If you find this repository helpful for you, you're welcome to cite our paper:
+If you find this repository helpful for you, please cite our paper:
 ```
 @inproceedings{wang2021fcl,
   title={Fcl-Taco2: Towards Fast, Controllable and Lightweight Text-to-Speech Synthesis},
