@@ -1,5 +1,12 @@
 ## FCL-Taco2: Towards Fast, Controllable and Lightweight Text-to-Speech synthesis (ICASSP 2021)  [Paper](http://www1.se.cuhk.edu.hk/~hccl/publications/pub/ICASSP2021-FCL-taco2-final-version.pdf) | [Demo](https://wendison.github.io/FCL-taco2-demo/)
 
+<p align="center">
+	<img src='./diagram/fcl-taco2.png' width=500 >
+</p>
+<p align="center">
+Block diagram of FCL-taco2, where the decoder generates mel-spectrograms in AR mode within each phoneme and is shared for all phonemes.
+</p>
+
 ## :speech_balloon: Huawei Noah's Ark Lab is recruiting interns on speech processing fields, if you're interested, you're welcome to contact Dr. Deng:  dengliqun.deng@huawei.com
 
 ## Training and inference scripts for FCL-taco2
