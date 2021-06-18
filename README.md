@@ -1,5 +1,4 @@
-## FCL-TACO2: Towards Fast, Controllable and Lightweight Text-to-Speech synthesis (ICASSP 2021)
-### [Paper](http://www1.se.cuhk.edu.hk/~hccl/publications/pub/ICASSP2021-FCL-taco2-final-version.pdf) | [Demo](https://wendison.github.io/FCL-taco2-demo/)
+## FCL-TACO2: Towards Fast, Controllable and Lightweight Text-to-Speech synthesis (ICASSP 2021)  [Paper](http://www1.se.cuhk.edu.hk/~hccl/publications/pub/ICASSP2021-FCL-taco2-final-version.pdf) | [Demo](https://wendison.github.io/FCL-taco2-demo/)
 
 ## :speech_balloon: Huawei Noah's Ark Lab is recruiting interns on speech processing fields, if you're interested, you're welcome to contact Dr. Deng:  dengliqun.deng@huawei.com
 
