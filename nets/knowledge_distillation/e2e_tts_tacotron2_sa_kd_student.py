@@ -10,8 +10,8 @@ import torch
 import torch.nn.functional as F
 
 from espnet.nets.pytorch_backend.nets_utils import make_non_pad_mask, make_pad_mask, pad_list
-from nets.modules.decoder_sa import Decoder
-from nets.modules.encoder_sa import Encoder
+from nets.modules.decoder_sa_kd import Decoder
+from nets.modules.encoder_sa_kd import Encoder
 from espnet.nets.tts_interface import TTSInterface
 from espnet.utils.cli_utils import strtobool
 from espnet.utils.fill_missing_args import fill_missing_args
