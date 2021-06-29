@@ -778,23 +778,23 @@ class Tacotron2_sa(TTSInterface, torch.nn.Module):
         if self.distill_output_knowledge:
             output_l1_loss, output_mse_loss = self.taco2_knowledge_loss(after_outs, before_outs, after_outs_know, before_outs_know, olens)
             loss = loss + output_l1_loss + output_mse_loss
-            report_keys += [{'output_l1_loss': output_l1_loss.items()}]
-            report_keys += [{'output_mse_loss': output_mse_loss.items()}]
+            report_keys += [{'output_l1_loss': output_l1_loss.item()}]
+            report_keys += [{'output_mse_loss': output_mse_loss.item()}]
             
         if self.distill_encoder_knowledge:
             encoder_loss = self.knowledge_loss(enc_distill_items, enc_teacher_know, ilens)
             loss = loss + encoder_loss
-            report_keys += [{'encoder_loss': encoder_loss.items()}]
+            report_keys += [{'encoder_loss': encoder_loss.item()}]
         
         if self.distill_decoder_knowledge:
             decoder_loss = self.knowledge_loss(dec_distill_items, dec_teacher_know, olens)
             loss = loss + decoder_loss
-            report_keys += [{'decoder_loss': decoder_loss.items()}]
+            report_keys += [{'decoder_loss': decoder_loss.item()}]
             
         if self.distill_prosody_knowledge:
             prosody_loss = self.knowledge_loss(prosody_distill_items, prosody_teacher_know, ilens)
             loss = loss + prosody_loss
-            report_keys += [{'prosody_loss': prosody_loss.items()}]
+            report_keys += [{'prosody_loss': prosody_loss.item()}]
             
         report_keys += [{"loss": loss.item()}]
         self.reporter.report(report_keys)

@@ -561,6 +561,7 @@ class Tacotron2_sa(TTSInterface, torch.nn.Module):
         ds = extras.squeeze(-1)
         d_masks = make_pad_mask(ilens).to(xs.device)
         d_outs = self.duration_predictor(hs, d_masks) # (B, Tmax)
+        d_outs = d_outs.unsqueeze(-1) # (B, Tmax, 1)
         
 #        duration_masks = make_non_pad_mask(ilens).to(ys.device)
 #        d_outs = d_outs.masked_select(duration_masks)
