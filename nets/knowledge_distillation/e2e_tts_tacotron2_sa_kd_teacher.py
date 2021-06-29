@@ -333,7 +333,7 @@ class Tacotron2_sa(TTSInterface, torch.nn.Module):
         args = fill_missing_args(args, self.add_arguments)
         
         args = vars(args)
-        if 'use_fe_condtion' not in args.keys():
+        if 'use_fe_condition' not in args.keys():
             args['use_fe_condition'] = com_args.use_fe_condition
         if 'append_position' not in args.keys():
             args['append_position'] = com_args.append_position
@@ -399,7 +399,7 @@ class Tacotron2_sa(TTSInterface, torch.nn.Module):
             dropout_rate=args.dropout_rate,
             zoneout_rate=args.zoneout_rate,
             reduction_factor=args.reduction_factor,
-            use_fe_condition=args.use_fe_condtion,
+            use_fe_condition=args.use_fe_condition,
             append_position=args.append_position,
             is_student=False,
         )

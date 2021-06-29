@@ -436,7 +436,7 @@ class Tacotron2_sa(TTSInterface, torch.nn.Module):
         args = fill_missing_args(args, self.add_arguments)
         
         args = vars(args)
-        if 'use_fe_condtion' not in args.keys():
+        if 'use_fe_condition' not in args.keys():
             args['use_fe_condition'] = com_args.use_fe_condition
         if 'append_position' not in args.keys():
             args['append_position'] = com_args.append_position
@@ -528,7 +528,7 @@ class Tacotron2_sa(TTSInterface, torch.nn.Module):
             dropout_rate=args.dropout_rate,
             zoneout_rate=args.zoneout_rate,
             reduction_factor=args.reduction_factor,
-            use_fe_condition=args.use_fe_condtion,
+            use_fe_condition=args.use_fe_condition,
             append_position=args.append_position,
             is_student=is_student,
             teacher_args=teacher_args,
@@ -626,11 +626,11 @@ class Tacotron2_sa(TTSInterface, torch.nn.Module):
         none_params = 0
         if self.share_proj:
             for net in [self.enc.embed_proj, self.enc.convs_proj, self.enc.blstm_proj, self.pemb_proj, self.eemb_proj,
-                        self.dec.prenet_proj, self.dec.lstm.proj, self.dec.post_proj]:
+                        self.dec.prenet_proj, self.dec.lstm_proj, self.dec.post_proj]:
                 none_params += cal_num_params(net)
         else:
             for net in [self.enc.embed_proj, self.enc.convs_proj, self.enc.blstm_proj, self.pemb_proj, self.eemb_proj,
-                        self.dec.prenet_proj, self.dec.lstm0.proj, self.dec.lstm1.proj, self.dec.post0_proj, self.dec.post1_proj,
+                        self.dec.prenet_proj, self.dec.lstm0_proj, self.dec.lstm1_proj, self.dec.post0_proj, self.dec.post1_proj,
                         self.dec.post2_proj, self.dec.post3_proj]:
                 none_params += cal_num_params(net)
                 
