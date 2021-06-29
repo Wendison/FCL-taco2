@@ -482,6 +482,7 @@ class Decoder(torch.nn.Module):
                 self.lstm_proj = torch.nn.Linear(dunits, teacher_args.dunits, bias=False)
                 self.post_proj = torch.nn.Linear(postnet_chans, teacher_args.postnet_chans, bias=False)
             else:
+                self.lstm0_proj = torch.nn.Linear(dunits, teacher_args.dunits, bias=False)
                 self.lstm1_proj = torch.nn.Linear(dunits, teacher_args.dunits, bias=False)
                 self.post0_proj = torch.nn.Linear(postnet_chans, teacher_args.postnet_chans, bias=False)
                 self.post1_proj = torch.nn.Linear(postnet_chans, teacher_args.postnet_chans, bias=False)
