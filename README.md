@@ -61,7 +61,7 @@ Block diagram of FCL-taco2, where the decoder generates mel-spectrograms in AR m
 
 
 # Citation
-If you find this repository helpful for you, please cite our paper:
+If the code is used in your research, please star our repo and cite our paper:
 ```
 @inproceedings{wang2021fcl,
   title={Fcl-Taco2: Towards Fast, Controllable and Lightweight Text-to-Speech Synthesis},
