@@ -24,11 +24,11 @@ Block diagram of FCL-taco2, where the decoder generates mel-spectrograms in AR m
 
 *  Step1. Data preparation & preprocessing
 
-1.  Download LJSpeech from https://keithito.com/LJ-Speech-Dataset/
+1.  Download [LJSpeech](https://keithito.com/LJ-Speech-Dataset/)
 
 2.  Unpack downloaded LJSpeech-1.1.tar.bz2 to /xx/LJSpeech-1.1
 
-3.  Obtain the forced alignment information by using Montreal forced aligner tool https://montreal-forced-aligner.readthedocs.io/en/latest/. Or you can download our alignment results at https://drive.google.com/file/d/1nMjPlPDtspPxgG5AK-AdBq1ce330YMGP, then unpack it to /xx/TextGrid
+3.  Obtain the forced alignment information by using [Montreal forced aligner tool](https://montreal-forced-aligner.readthedocs.io/en/latest/). Or you can download [our alignment results](https://drive.google.com/file/d/1nMjPlPDtspPxgG5AK-AdBq1ce330YMGP), then unpack it to /xx/TextGrid
 
 4.  Preprocess the dataset to extract mel-spectrograms, phoneme duration, pitch, energy and phoneme sequence by:
 
@@ -46,7 +46,7 @@ Block diagram of FCL-taco2, where the decoder generates mel-spectrograms in AR m
 
          ./student_model_training.sh
 
-3.  Parallel-WaveGAN vocoder training: follow instructions at https://github.com/kan-bayashi/ParallelWaveGAN. You can also download the pre-trained PWG vocoder, and put the PWG model under the directory "vocoder".
+3.  Parallel-WaveGAN vocoder training: follow instructions at [here](https://github.com/kan-bayashi/ParallelWaveGAN). You can also download the pre-trained PWG vocoder, and put the PWG model under the directory "vocoder".
 
 
 *  Step3. Model evaluation
