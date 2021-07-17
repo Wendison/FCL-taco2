@@ -161,14 +161,14 @@ class Encoder(torch.nn.Module):
             xs_conv0 = self.convs[0](xs_embed) # B x econv_chans x Tmax
             
         if self.use_residual:
-            xs_conv1 = self.convs[0](xs_conv0) + xs_conv0
+            xs_conv1 = self.convs[1](xs_conv0) + xs_conv0
         else:
-            xs_conv1 = self.convs[0](xs_conv0) # B x econv_chans x Tmax
+            xs_conv1 = self.convs[1](xs_conv0) # B x econv_chans x Tmax
             
         if self.use_residual:
-            xs_conv2 = self.convs[0](xs_conv1) + xs_conv1
+            xs_conv2 = self.convs[2](xs_conv1) + xs_conv1
         else:
-            xs_conv2 = self.convs[0](xs_conv1) # B x econv_chans x Tmax
+            xs_conv2 = self.convs[2](xs_conv1) # B x econv_chans x Tmax
         
         enc_out = pack_padded_sequence(xs_conv2.transpose(1, 2), ilens, batch_first=True)
         self.blstm.flatten_parameters()
