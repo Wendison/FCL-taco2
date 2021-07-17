@@ -245,7 +245,7 @@ def get_parser():
     """Get parser of data processing arguments."""
     parser = configargparse.ArgumentParser()
     # path
-    parser.add("--data-root", type=str, default='/mnt/data02/d00225230/wangdisong/Dataset/LJSpeech-1.1', help="path of original wavs")
+    parser.add("--data-root", type=str, default='/Dataset/LJSpeech-1.1', help="path of original wavs")
     parser.add("--feature-root", type=str, default='data', help="path for saving acoustic features")
     parser.add("--textgrid-root", type=str, default='TextGrid', help="path for textgrid files obtained from MFA")
     # feature settings
