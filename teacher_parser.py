@@ -324,25 +324,25 @@ def get_teacher_parser():
         "--distill-output-knowledge",
         default=True,
         type=strtobool,
-        help="whether to use GST to preserve style",
+        help="whether to distill output knowledge",
     )
     parser.add_argument(
         "--distill-encoder-knowledge",
         default=True,
         type=strtobool,
-        help="whether to use GST to preserve style",
+        help="whether to distill encoder knowledge",
     )
     parser.add_argument(
         "--distill-decoder-knowledge",
         default=True,
         type=strtobool,
-        help="whether to use GST to preserve style",
+        help="whether to distill decode knowledge",
     )
     parser.add_argument(
         "--distill-prosody-knowledge",
         default=True,
         type=strtobool,
-        help="whether to use GST to preserve style",
+        help="whether to distill prosody knowledge",
     )
     
     return parser
