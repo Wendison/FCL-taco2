@@ -7,7 +7,6 @@
 Block diagram of FCL-taco2, where the decoder generates mel-spectrograms in AR mode within each phoneme and is shared for all phonemes.
 </p>
 
-## Training and inference scripts for FCL-taco2
 ## Environment
 *  python 3.6.10
 *  torch 1.3.1
