@@ -7,8 +7,6 @@
 Block diagram of FCL-taco2, where the decoder generates mel-spectrograms in AR mode within each phoneme and is shared for all phonemes.
 </p>
 
-## :speech_balloon: Huawei Noah's Ark Lab is recruiting interns on speech processing fields, if you're interested, you're welcome to contact Dr. Deng:  dengliqun.deng@huawei.com
-
 ## Training and inference scripts for FCL-taco2
 ## Environment
 *  python 3.6.10
