@@ -170,7 +170,7 @@ class Knowledge_loss(torch.nn.Module):
             s = s.masked_select(masks)
             t = t.masked_select(masks)
             # calculate loss
-            if type is not None:
+            if typ is not None:
                 tloss = torch.nn.L1Loss(reduction='mean')(s,t)
             else:
                 tloss = self.mse_criterion(s,t)
